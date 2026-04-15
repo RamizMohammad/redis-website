@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WhatItDoesSection from "@/components/WhatItDoesSection";
 import FeatureGridSection from "@/components/FeatureGridSection";
@@ -23,14 +24,17 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main>
-      <HeroSection />
-      <WhatItDoesSection />
-      <FeatureGridSection />
-      <FounderSection />
-      <ArchitectureSection />
-      <RoadmapSection />
-      <FooterSection />
-    </main>
+    <>
+      <Navbar />
+      <main className="pt-16">
+        <HeroSection />
+        <WhatItDoesSection />
+        <FeatureGridSection />
+        <FounderSection />
+        <ArchitectureSection />
+        <RoadmapSection />
+        <FooterSection />
+      </main>
+    </>
   );
 }
