@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <span className="w-2.5 h-2.5 rounded-full bg-redis glow-redis-sm group-hover:scale-125 transition-transform" />
+          <img src="/logo.jpeg" alt="Central Redis Logo" className="h-8 w-auto hover:scale-110 transition-transform" />
           <span className="font-bold text-foreground tracking-tight">Central Redis</span>
         </a>
 
