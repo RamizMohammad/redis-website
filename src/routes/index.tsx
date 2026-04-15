@@ -1,26 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
+import HeroSection from "@/components/HeroSection";
+import WhatItDoesSection from "@/components/WhatItDoesSection";
+import FeatureGridSection from "@/components/FeatureGridSection";
+import FounderSection from "@/components/FounderSection";
+import ArchitectureSection from "@/components/ArchitectureSection";
+import RoadmapSection from "@/components/RoadmapSection";
+import FooterSection from "@/components/FooterSection";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Central Redis — Multi-Tenant Redis API Platform" },
+      {
+        name: "description",
+        content:
+          "Redis for multiple projects, one clean control layer. Isolated storage, simple API access, and admin control — without managing Redis infrastructure.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main>
+      <HeroSection />
+      <WhatItDoesSection />
+      <FeatureGridSection />
+      <FounderSection />
+      <ArchitectureSection />
+      <RoadmapSection />
+      <FooterSection />
+    </main>
+  );
 }
