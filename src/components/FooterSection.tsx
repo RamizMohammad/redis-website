@@ -76,11 +76,19 @@ export default function FooterSection() {
       </div>
 
       {/* Footer bar */}
-      <div className="mt-24 pt-8 border-t border-border max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+      <div className="mt-24 pt-8 border-t border-border max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-muted-foreground">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-redis" />
           <span className="font-semibold text-foreground">Central Redis</span>
         </div>
+
+        <div className="flex items-center gap-4">
+          <a href="https://www.mohammadramiz.in" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Portfolio</a>
+          <a href="https://github.com/RamizMohammad" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub</a>
+          <a href="https://www.linkedin.com/in/ramizmohammad" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">LinkedIn</a>
+          <a href="mailto:ramizanas6@gmail.com" className="hover:text-foreground transition-colors">Contact</a>
+        </div>
+
         <p>© {new Date().getFullYear()} Central Redis. Built with intent.</p>
       </div>
     </section>
