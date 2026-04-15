@@ -10,5 +10,8 @@ export default defineConfig({
   cloudflare: false,
   tanstackStart: {
     target: "vercel",
+    prerender: {
+      enabled: true,
+    },
   },
 });
