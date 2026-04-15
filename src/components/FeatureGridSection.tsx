@@ -1,33 +1,34 @@
 import { motion } from "framer-motion";
+import { Zap, KeyRound, Database, ShieldCheck, LayoutDashboard, RefreshCw } from "lucide-react";
 
 const features = [
   {
-    icon: "⚡",
+    icon: Zap,
     title: "Blazing Fast",
     description: "Redis-backed, sub-millisecond reads. No cold starts, no connection pooling headaches.",
   },
   {
-    icon: "🔑",
+    icon: KeyRound,
     title: "Per-Project Keys",
     description: "Every project authenticates with its own API key. Full isolation, zero crosstalk.",
   },
   {
-    icon: "📦",
+    icon: Database,
     title: "Rich Data Types",
     description: "Strings, lists, hashes, counters, TTLs — all the Redis primitives you need, via REST.",
   },
   {
-    icon: "🛡️",
+    icon: ShieldCheck,
     title: "Namespace Isolation",
     description: "Projects can't see each other's data. Namespacing is enforced at the platform level.",
   },
   {
-    icon: "📊",
+    icon: LayoutDashboard,
     title: "Admin Dashboard",
     description: "Create projects, rotate keys, flush data, and view operations — all from one panel.",
   },
   {
-    icon: "🔄",
+    icon: RefreshCw,
     title: "Keep-Alive Built In",
     description: "Deployment-stable with built-in keep-alive. No dropped connections on serverless hosts.",
   },
@@ -56,13 +57,15 @@ export default function FeatureGridSection() {
           {features.map((f, i) => (
             <motion.div
               key={f.title}
-              className="p-6 rounded-xl border border-border bg-surface hover:border-redis/20 transition-colors"
+              className="group p-6 rounded-xl border border-border bg-surface hover:border-redis/20 transition-colors"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: i * 0.07 }}
             >
-              <div className="text-2xl mb-3">{f.icon}</div>
+              <div className="mb-4 w-10 h-10 rounded-lg bg-redis/10 flex items-center justify-center group-hover:bg-redis/20 transition-colors">
+                <f.icon className="w-5 h-5 text-redis" />
+              </div>
               <h3 className="font-semibold mb-1.5">{f.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
             </motion.div>
