@@ -8,7 +8,7 @@ const roadmapItems = [
 
 export default function RoadmapSection() {
   return (
-    <section className="py-32 px-6 border-t border-border">
+    <section id="roadmap" className="py-32 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-16"

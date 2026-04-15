@@ -20,7 +20,7 @@ const steps = [
 
 export default function ArchitectureSection() {
   return (
-    <section className="py-32 px-6 border-t border-border relative overflow-hidden">
+    <section id="architecture" className="py-32 px-6 border-t border-border relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial opacity-10 pointer-events-none" />
 
       <div className="max-w-5xl mx-auto relative z-10">

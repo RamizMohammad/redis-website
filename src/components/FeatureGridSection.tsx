@@ -36,7 +36,7 @@ const features = [
 
 export default function FeatureGridSection() {
   return (
-    <section className="py-32 px-6 border-t border-border">
+    <section id="features" className="py-32 px-6 border-t border-border">
       <div className="max-w-5xl mx-auto">
         <motion.div
           className="text-center mb-16"
