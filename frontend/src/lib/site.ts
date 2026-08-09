@@ -11,7 +11,7 @@
  * Where the dashboard lives. Set VITE_APP_URL at build time.
  * The marketing site is redis.mohammadramiz.in; the app is a separate service.
  */
-export const APP_URL = import.meta.env.VITE_APP_URL ?? "https://app.redis.mohammadramiz.in";
+export const APP_URL = import.meta.env.VITE_APP_URL ?? "https://api.redis.mohammadramiz.in";
 
 /** Public base for tenant API calls, used in every code sample. */
 export const API_BASE = import.meta.env.VITE_API_BASE ?? "https://api.redis.mohammadramiz.in";
