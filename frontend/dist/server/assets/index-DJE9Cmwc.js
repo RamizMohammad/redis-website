@@ -1,7 +1,7 @@
-import { jsxs, jsx, Fragment } from "react/jsx-runtime";
-import { useState, useEffect, useRef, useMemo } from "react";
-import { Menu, X, Check, Copy, Gauge, Database, Terminal, KeyRound, BarChart3, Settings, Layers, Braces, LineChart, Search, ShieldCheck, ArrowRight, Send, Plus, Github, Linkedin, Globe, ChevronDown } from "lucide-react";
 import { clsx } from "clsx";
+import { ArrowRight, BarChart3, Braces, Check, ChevronDown, Copy, Database, Gauge, Github, Globe, KeyRound, Layers, LineChart, Linkedin, Menu, Plus, Search, Send, Settings, ShieldCheck, Terminal, X } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 import { twMerge } from "tailwind-merge";
 function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -120,7 +120,7 @@ function StatusDot({ tone = "ok" }) {
     }
   );
 }
-const APP_URL = "https://app.redis.mohammadramiz.in";
+const APP_URL = "https://api.redis.mohammadramiz.in";
 const API_BASE = "https://api.redis.mohammadramiz.in";
 const SIGNUP_URL = `${APP_URL}/signup`;
 const SIGNIN_URL = `${APP_URL}/login`;
