@@ -1,0 +1,8 @@
+{
+  "buildCommand": "vite build",
+  "framework": "vite",
+  "outputDirectory": "dist/client",
+  "env": {
+    "SKIP_ENV_VALIDATION": "true"
+  }
+}
